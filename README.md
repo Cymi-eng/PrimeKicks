@@ -34,7 +34,6 @@ Prime-Kicks/
 ├── index.html
 ├── style.css
 ├── README.md
-│
 ├── images/
 ```
 
