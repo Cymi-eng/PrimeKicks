@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeKicks</title>
+    <link rel="stylesheet" href="kicks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="main">
+        <div class="glass-box">
+            <h1>PrimeKicks</h1>
+            <p> Step Into Greatness</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+            </ul>
+            </nav>
+            
+        </div>
+           
+    </header>
+    <!--Hero Section -->
+    <section id="Home" class="Showcase">
+         <div class="hero">
+            <h2> step into greatness</h2>
+            <p>
+                Discover trendy sneakers, premium streetwear kicks,<br>
+                and stylish footwear made for comfort and fashion.<br>
+            </p>
+
+        </div>
+
+    </section>
+      
+    <!-- products -->
+     <section class="products" id="products">
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/force.jpg" alt="sker">
+            <h3>Nike Airfoce</h3>
+            <p class="price"> KES 2500</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)"> 
+            <img src="assets/images/skers.jpg" alt="skers">
+            <h3> Retro Sneakers</h3>
+            <p class="price"> KES 2000</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/official.jpg" alt="official">
+            <h3> Official Shoes </h3>
+            <p class="price"> KES 3500</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/shooter.jpg" alt="leather">
+            <h3> Supreme leather</h3>
+            <p class="price"> KES 4000</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/heels.jpg" alt="heels">
+            <h3> Turkey Heels</h3>
+            <p class="price"> KES 3800</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/wedd.jpg" alt="crystal">
+            <h3> crystal Heels</h3>
+            <p class="price"> KES 4200</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/sport.jpg" alt="sport">
+            <h3>Nike Sports</h3>
+            <p class="price"> KES 2300</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+        <div class="product-card" onclick="openModal (this)">
+            <img src="assets/images/sporte.jpg" alt="sporte">
+            <h3>Urbans</h3>
+            <p class="price"> KES 1800</p>
+            <div class="stars"> ⭐⭐⭐⭐⭐</div>
+            <button> Add To Cart</button>
+        </div>
+
+     </section>
+      <!-- PRODUCT MODAL -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <img id="modalImage" src="" alt="Product Image">
+
+      <h2 id="modalTitle"></h2>
+
+      <p class="modal-price" id="modalPrice"></p>
+
+      <p>
+        Experience premium comfort, stylish design, and top-tier
+        sneaker quality with Prime Kicks collections.
+      </p>
+
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>
