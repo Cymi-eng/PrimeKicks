@@ -2,17 +2,17 @@ h1{
     font-size: xx-large;
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    color: rgb(98, 255, 0);
+    color: goldenrod;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 body{
     background: #020d2b;
     color: white;
-    background-image: url(assets/images/wedd.jpg);
 }
 
 .fa-solid {
-    color: rgb(18, 0, 73);
+    color: rgb(176, 158, 230);
 }
 .nav-links{
     text-decoration: none;
@@ -50,12 +50,16 @@ img {
     background-color: maroon;
     color: aliceblue;
     border-radius:10px ;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
 }
 .product-card img{
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 12px;
+    transition: 0.3s;
 }
 
 .main {
@@ -75,7 +79,7 @@ img {
     width: 80%;
     max-width: 700px;
     padding: 40px;
-    background: rgb(70, 61, 61);
+    background: rgb(65, 6, 6);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);  
@@ -86,8 +90,10 @@ img {
 .hero {
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
-    color: blue;
+    color: rgb(244, 244, 244);
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .price {
   color: #ff4d4d;
@@ -101,9 +107,15 @@ img {
   background: #111;
   color: white;
   border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+
 }
+.product-card:hover{
+      cursor: pointer;
+    transition: 0.3s;
+    transform: rotateY('angle');
+}
+
+
 .product-card button:hover {
   background: #ff4d4d;
 }
@@ -113,9 +125,91 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(153, 152, 152, 0.7);
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+h1 ~ p {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: aqua;
+}
+h2 ~ p {
+    color: rgb(255, 255, 255);
+    text-decoration: dotted;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.modal {
+     position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+.modal:target{
+    display: flex;
+}
+.modal-content{
+    background: white;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    animation: popup 0.3s ease;
+}
+.modal-content img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.modal-description{
+    color: #444;
+    line-height: 1.6;
+}
+
+.view-btn{
+    margin-top: 10px;
+    text-transform: none;
+    padding: 10px 20x;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.close-btn{
+    position: absolute;
+
+    right: 20px;
+    top: 10px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    color: black;
 }
