@@ -1,0 +1,27 @@
+
+body {
+    padding: 30px;
+    background-color: rgb(14, 7, 54);
+    color: brown;
+}
+.main {
+    padding: 20px ;
+    color: maroon;
+    align-items: center;
+    text-align: center;
+    background-image: url(assets/images/sport.jpg);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+    background-size: contain;
+}
+.hero {
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main h1 {
+    text-decoration: underline;
+}
